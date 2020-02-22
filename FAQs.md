@@ -44,10 +44,10 @@ Hi everyone, this is a FAQ document about FLIP (00).  This is also a document th
 
 *latex --synctex=1 -interaction=nonstopmode --shell-escape %.tex | dvips -o %.ps %.dvi| ps2pdf %.ps*
 
-<img src="C:\flip00\Image\faq-figure1" alt="img" style="zoom: 25%;" />      
+<img src="C:\flip00\Image\faq-figure1.png" alt="img" style="zoom: 25%;" />      
 
 **7.** *LaTexDiff*生成差异文件一直报错（如下图所示）？
 
-<img src="C:\flip00\Image\faq-figure2" alt="img"  />      
+<img src="C:\flip00\Image\faq-figure2.png" alt="img"  />      
 
 解决方案很简单，就是按照上面的提示，在原有的命令上加 *--pdf-viewer CMD*
