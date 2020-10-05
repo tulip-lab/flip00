@@ -1,4 +1,8 @@
-# FLIP(00) Data Science
+# README #
+
+
+
+  # FLIP(00) Data Science
 
 ------
 
@@ -10,7 +14,7 @@
 
 For the `Data Science` course prepared by [TULIP Lab](http://www.tulip.org.au), Australia
 
-- 2020 maintainers: [Huiling Zhou](https://github.com/YukaZhou)
+- 2020 maintainers: [Huiling Zhou](https://github.com/YukaZhou)，[Guanzhang Huang](https://github.com/Lion-HuangGz)
 - 2019 maintainers: [Xiaojuan Cheng](https://github.com/XiaojuanCheng), [Huiling Zhou](https://github.com/YukaZhou)
 
 ------
@@ -29,3 +33,7 @@ For the `Data Science` course prepared by [TULIP Lab](http://www.tulip.org.au), 
 -  A FAQ document about FLIP (00)
   - [ ]   As FLIP (00) 's assessment focuses on the mastery of *LaTeX* and *Git* tools, this document summarizes the most common problems about *LaTeX* and *Git* . Encourage everyone to update their problems in time or provide solutions to problems encountered by others in the form of issues and pull requests.
 
+### `Syllabus` 
+
+-  Syllabus is a detailed document about the study guidance, planning, Suggestions and requirements of the FLIP(00) Group,
+which is intended for careful reading by the new members.
