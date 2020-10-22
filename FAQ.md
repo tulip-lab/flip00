@@ -51,3 +51,8 @@ Hi everyone, this is a FAQ document about FLIP (00).  This is also a document th
 <img src="Image/faq-figure2.png" alt="img"  />      
 
 解决方案很简单，就是按照上面的提示，在原有的命令上加 *--pdf-viewer CMD*
+
+**8.** *VS code*无法编译slides
+
+配置文件需要*VS code*调整。参考[配置文件](https://shimo.im/docs/9rTC6VTJ9VgCvw3W/ )
+
