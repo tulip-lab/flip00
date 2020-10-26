@@ -54,3 +54,5 @@ Hi everyone, this is a FAQ document about FLIP (00).  This is also a document th
 
 **8.** *VS code*无法编译slides
 配置文件需要*VS code*调整。参考[配置文件](https://shimo.im/docs/9rTC6VTJ9VgCvw3W/ )
+**9.** *latexdiff*无法比较两个tex文件差异
+两个tex文件尽量不要包含表格，标题，尤其是图片。最好只是纯文档之间的比较。
