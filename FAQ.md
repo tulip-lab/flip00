@@ -58,3 +58,13 @@ Hi everyone, this is a FAQ document about FLIP (00).  This is also a document th
 **9.** *latexdiff*无法比较两个tex文件差异
 两个tex文件尽量不要包含表格，标题，尤其是图片。最好只是纯文档之间的比较。
 
+
+**9.** *Latex*编译slides失败，提示
+*! LaTeX Error: File xxx.sty not found*
+
+即使用模板时，缺少宏包
+
+1.需要到[ctan.org](https://ctan.org/pkg)下载相应的宏包，并解压到Latex的安装目录（如D:\software\texlive\texmf-local\tex\latex）。
+
+2.在cmd窗口使用*mktexlsr*命令更新即可。
+
