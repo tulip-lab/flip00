@@ -30,7 +30,7 @@ Prepared by **FLIP00 Team**
 ---
 
 ## Maintainer
-* 2022： [Baojie Zhang](https://github.com/zhangdabao361)
+* 2022： [Baojie Zhang,Yang Cao](https://github.com/zhangdabao361,https://github.com/caoyangcharles)
 * 2021： [Baojie Zhang](https://github.com/zhangdabao361)
 * 2020： Guanzhang Huang
 * 2019： Huiling Zhou
