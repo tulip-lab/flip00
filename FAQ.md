@@ -68,3 +68,12 @@ Hi everyone, this is a FAQ document about FLIP (00).  This is also a document th
 
 2.在cmd窗口使用*mktexlsr*命令更新即可。
 
+**8.** *VS code*编译*poster*或*report*的时候，报错*Can be used only in preamble*
+
+非*poster*或*report*编译，出现这种问题的原因是：
+
+1. 你在正文中引入了某个包或者类，而不是在序言（preamble）中，那么就会发生这个错误（在命令 \begin{document} 之前的内容，都被称为序言）。你可以将你引入的包或者类放在\begin{document}之前
+
+*poster*或*report*编译，出现这种问题的原因是：
+
+你使用了错误的编译命令，在编译*poster*和*report*的时候，你需要使用*latexmk -pdf*工具，也就是说你应该选择*mk pdf*按键来生成。此外在你生成slides的时候，你应该使用的命令是*"latex", "dvips", "ps2pdf"*.
