@@ -10,7 +10,7 @@ Hi everyone, this is a FAQ document about FLIP (00).  This is also a document th
 
 建议自己寻找资料学习操作流程，*GitFlow*和*LaTexDiff*是比较基本的工具，多练习几遍就可以掌握。
 
-提供参考[blog 1](https://blog.tulip.org.au/2018/07/31/Tools-LaTeX/ )和[2](https://coco.tulip.org.au/post/git-latexdiff/)。
+提供参考[blog 1](https://www.tulip.academy/blog/workflow-latex)。
 
 **2.** *Git LaTexDiff* 生成的文档不能显示*GitInfo*信息？
 
@@ -34,7 +34,7 @@ Hi everyone, this is a FAQ document about FLIP (00).  This is also a document th
 
 **5.** 为什么直接用 *TexStudio* 编译，*GitInfo* 是有效的。但使用 *Git LatexDiff* 生成的差异文档，*GitInfo* 不生效？
 
-解决方法 by [周佳绘](http://blog.sanhuax2.xyz/ )。
+解决方法 by [周佳绘](https://www.tulip.academy/blog/filp00 )。
 
 **6.** 使用 *TexStudio+TexLive* 编译 *Slides* 会出现编译不出来的情况?
 
@@ -54,7 +54,7 @@ Hi everyone, this is a FAQ document about FLIP (00).  This is also a document th
 
 **8.** *VS code*无法编译slides
 
-配置文件需要*VS code*调整。参考[配置文件](https://shimo.im/docs/9rTC6VTJ9VgCvw3W/ )
+配置文件需要*VS code*调整。参考[配置文件](https://shimo.im/docs/9rTC6VTJ9VgCvw3W/ )，或者是）00组钉钉群文件。
 **9.** *latexdiff*无法比较两个tex文件差异
 两个tex文件尽量不要包含表格，标题，尤其是图片。最好只是纯文档之间的比较。
 
@@ -72,8 +72,12 @@ Hi everyone, this is a FAQ document about FLIP (00).  This is also a document th
 
 非*poster*或*report*编译，出现这种问题的原因是：
 
-1. 你在正文中引入了某个包或者类，而不是在序言（preamble）中，那么就会发生这个错误（在命令 \begin{document} 之前的内容，都被称为序言）。你可以将你引入的包或者类放在\begin{document}之前
+1. 在正文中引入了某个包或者类，而不是在序言（preamble）中，那么就会发生这个错误（在命令 \begin{document} 之前的内容，都被称为序言）。可以将引入的包或者类放在\begin{document}之前
 
 *poster*或*report*编译，出现这种问题的原因是：
 
-你使用了错误的编译命令，在编译*poster*和*report*的时候，你需要使用*latexmk -pdf*工具，也就是说你应该选择*mk pdf*按键来生成。此外在你生成slides的时候，你应该使用的命令是*"latex", "dvips", "ps2pdf"*.
+使用了错误的编译命令，在编译*poster*和*report*的时候，你需要使用*latexmk -pdf*工具，也就是说你应该选择*mk pdf*按键来生成。此外在生成slides的时候，应该使用的命令是*"latex", "dvips", "ps2pdf"*.
+
+**9.** *overleaf*上面编译*slides*报错：
+
+需要将overleaf的编译器设置为*LaTeX*（Answer by 张宝杰）
