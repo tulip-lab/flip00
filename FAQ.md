@@ -68,16 +68,24 @@ Hi everyone, this is a FAQ document about FLIP (00).  This is also a document th
 
 2.在cmd窗口使用*mktexlsr*命令更新即可。
 
-**8.** *VS code*编译*poster*或*report*的时候，报错*Can be used only in preamble*
+**10.** *VS code*编译*poster*或*report*的时候，报错*Can be used only in preamble*
 
-非*poster*或*report*编译，出现这种问题的原因是：
+非*poster*或*report*编译，出现这种问题的原因是：在正文中引入了某个包或者类，而不是在序言（preamble）中，那么就会发生这个错误（在命令 \begin{document} 之前的内容，都被称为序言）。
 
-1. 在正文中引入了某个包或者类，而不是在序言（preamble）中，那么就会发生这个错误（在命令 \begin{document} 之前的内容，都被称为序言）。可以将引入的包或者类放在\begin{document}之前
+解决办法：
 
-*poster*或*report*编译，出现这种问题的原因是：
+1.可以将引入的包或者类放在\begin{document}之前
 
-使用了错误的编译命令，在编译*poster*和*report*的时候，你需要使用*latexmk -pdf*工具，也就是说你应该选择*mk pdf*按键来生成。此外在生成slides的时候，应该使用的命令是*"latex", "dvips", "ps2pdf"*.
+2.在编译*poster*和*report*的时候，需要使用*latexmk -pdf*工具，也就是说你应该选择*mk pdf*按键来生成。此外在生成slides的时候，应该使用的命令是*"latex", "dvips", "ps2pdf"*.（大概率是这个原因引起的）
 
-**9.** *overleaf*上面编译*slides*报错：
+**11.** *overleaf*上面编译*slides*报错：
 
 需要将overleaf的编译器设置为*LaTeX*（Answer by 张宝杰）
+
+**12.** 使用本地环境编译模板文件时的建议。
+
+1.在运行原始模板的时候，如果报错：检查编译环境配置是否正确，VScode环境下主要检查Setting中.json配置；TexStudio环境下检查Default Compiler编译器是否设置正确。确保编译环境正确的情况下，再对模板进行修改编译。
+
+2.在写slides等文件的时候一定一定要记着**使用英文输入法！！！使用英文输入法！！！使用英文输入法！！！**
+
+3.在填充模板过程中，**边写边编译**。如果出现错误，首要检查**模板中是否出现中文符号(比如 ：，。 ？等)**。
