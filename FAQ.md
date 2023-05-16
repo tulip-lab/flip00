@@ -34,7 +34,7 @@ Hi everyone, this is a FAQ document about FLIP (00).  This is also a document th
 
 **5.** 为什么直接用 *TexStudio* 编译，*GitInfo* 是有效的。但使用 *Git LatexDiff* 生成的差异文档，*GitInfo* 不生效？
 
-解决方法 by [周佳绘](https://www.tulip.academy/blog/filp00 )。
+解决方法 by [周佳绘](https://www.tulip.academy/blog/filp00)。
 
 **6.** 使用 *TexStudio+TexLive* 编译 *Slides* 会出现编译不出来的情况?
 
