@@ -89,3 +89,41 @@ Hi everyone, this is a FAQ document about FLIP (00).  This is also a document th
 2.在写slides等文件的时候一定一定要记着**使用英文输入法！！！使用英文输入法！！！使用英文输入法！！！**
 
 3.在填充模板过程中，**边写边编译**。如果出现错误，首要检查**模板中是否出现中文符号(比如 ：，。 ？等)**。
+
+**13.** 使用texlive2023和texstudio配置环境时遇到的问题（Answer by 缪远致）
+
+1.最好不要手动修改系统的环境变量
+
+2.hyperref.sty报错
+这个宏包用于超链接。该包和多个宏包冲突，可以先不处理这个宏包的问题，解决和他冲突的宏包的问题。最好不要注释掉模板中的相关代码。
+
+3.breakurl.sty和siunitx.sty报错
+下载texlive2020，使用其的相应宏包替换掉2023里的。
+（可以不适用texlive2023,而使用texlive2020配置环境）
+
+4.dtk-logos.sty报错
+将dtk-logos.sty放置到和运行的tex文件同一个目录下。
+
+5.生成的slide只占页面的四分之一
+和代码里的比例、显示器比例无关，是texstudio出错的原因。
+
+6。记得按照教程文件配置。默认编译器使用user0。
+
+**14.** 使用texstudio插入图片时遇到的问题（Answer by 缪远致）
+
+1.Cannot determine size of graphic ......
+使用eps格式的图片。(可以使用PS转换图片，记得三种eps里选择最简单的eps保存)
+
+2.Please increase buf_size in texmf.cnf.
+图片占用内存较大。搜索找到texmf.cnf文件，用文本文档打开，在最后一行添加
+buf_size = 500000（或其他数字）
+
+3.Dimension too large
+图片过大。
+可以使用PS压缩图片，保存时，预览选择“无”，编码选择“JPEG（低品质）”。
+如果依旧报错，可以重新用python生成图片后，重新修改成eps。
+如果依旧报错，可以保存好各个文件后，重新启动电脑和软件。
+
+
+
+
