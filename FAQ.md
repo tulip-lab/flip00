@@ -26,7 +26,7 @@ Hi everyone, this is a FAQ document about FLIP (00).  This is also a document th
 - *Visual Studio Code*
 - *LaTeX Workshop （VS Code 插件）*
 
-安装和配置 tex 推荐 blog [1](https://www.latexstudio.net/archives/12260.html ),[2](https://www.cnblogs.com/1625--H/p/11524968.html )和[3](http://www.wenxingsen.com/blog/blogdetail.php?pageid=524 )。
+安装和配置 tex 推荐 blog [1](https://www.latexstudio.net),[2](https://www.cnblogs.com/1625--H/p/11524968.html )和[3](http://www.wenxingsen.com/blog/blogdetail.php?pageid=524 )。
 
 **4.** *LaTexDiff* 形成不了差异文件？
 
